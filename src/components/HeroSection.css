@@ -20,7 +20,14 @@ img {
     font-weight: weight;
     font-style: normal;
   }
-  
+  .hero-container img {
+    top: 0;             /* Üst kenarı sıfırlar */
+    left: 0;            /* Sol kenarı sıfırlar */
+    width: 100%;        /* Tam genişlik */
+    height: 100%;       /* Tam yükseklik */
+    object-fit: cover;  /* Resmin oranını korur ve alanı doldurur */
+    z-index: -1;        /* Arka planda kalmasını sağlar */
+  }
   .hero-container > h1 {
     color: #fff;
     font-size: 100px;
